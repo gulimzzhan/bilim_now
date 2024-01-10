@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofYxpgnWGm5uHDIp00NWr7t53f3ccZl4z" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/media.css">
+  <title>BilimFoundation</title>
+</head>
+
+
+<body class="page-wrapper">
+
+  <div class="nav-el">
+    <button id="login-btn">Войти</button>
+    <div class="dropdown">
+      <a id="language-icon" class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        RU
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">KZ</a></li>
+        <li><a class="dropdown-item" href="#">RU</a></li>
+        <li><a class="dropdown-item" href="#">ENG</a></li>
+      </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg" style="position: relative; z-index: 2">
+    <div>
+      <button class="navbar-toggler" style="position: absolute; right: 10px; top: 10px" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="navbar-brand" href="#"><img class="logo" src="./pics/main-logo.png" alt="nav main logo" /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><span style="display: block">Руководителям</span> и
+              специалистам</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Родителям</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><span style="display: block">Превенция</span>
+              суицида</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><span style="display: block">Служба</span>
+              <span style="display: block">психологической</span> поддержки</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><span style="display: block">Мониторинговая</span>
+              система</a>
+          </li>
+          <li class="nav-item">
+            <a id="current-page" class="nav-link active" aria-current="page" href="#"><span
+                style="display: block">Развитие</span><span style="display: block">жизненных</span> навыков</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="header page-wrapper">
+    <div class="wave-container">
+      <div class="wave" style="height: 150px">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 50%; width: 100%">
+          <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="fill: #fff">
+          </path>
+        </svg>
+      </div>
+      <img id="header-img" src="./pics/rect.png" alt="header image" />
+    </div>
+
+    <svg id="yellow-header" xmlns="http://www.w3.org/2000/svg" width="450" height="377" viewBox="0 0 450 377"
+      fill="none">
+      <path opacity="0.7"
+        d="M445.145 119.525C471.21 216.465 375.031 326.593 230.323 365.502C85.6144 404.411 38.2603 332.877 12.1951 235.937C-13.87 138.997 -8.77585 53.3601 135.932 14.4511C280.641 -24.458 419.08 22.5854 445.145 119.525Z"
+        fill="#D5E093" />
+    </svg>
+
+    <svg id="green-header" xmlns="http://www.w3.org/2000/svg" width="612" height="338" viewBox="0 0 612 338"
+      fill="none">
+      <path opacity="0.7"
+        d="M611.428 194.52C611.428 287.856 633.216 338 407.925 338C182.634 338 0 262.336 0 169C0 75.6639 182.634 0 407.925 0C633.216 0 611.428 101.184 611.428 194.52Z"
+        fill="#0C6D3C" />
+    </svg>
+
+    <h1 id="header-text">
+      <span style="display: block">Развитие</span>
+      <span style="display: block">жизненных навыков</span>
+    </h1>
+  </header>
+
+  <main>
+    <section class="main global-padding">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <p id="main-text">
+            <span style="display: block">Сопутствующая</span> Информация
+          </p>
+        </div>
+        <div class="main-div-container col-lg-3 col-md-6 col-sm-12">
+          <div class="main-div">Родителям</div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none">
+            <path opacity="0.6"
+              d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807611 1.97919 0.807611 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807611 21.0711 0.807611 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM11 13.5L12 13.5L12 10.5L11 10.5L11 13.5Z"
+              fill="black" />
+          </svg>
+        </div>
+        <div class="main-div-container col-lg-3 col-md-6 col-sm-12">
+          <div class="main-div">
+            <span style="display: block">Литература</span> и тренинги
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none">
+            <path opacity="0.6"
+              d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807611 1.97919 0.807611 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807611 21.0711 0.807611 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM11 13.5L12 13.5L12 10.5L11 10.5L11 13.5Z"
+              fill="black" />
+          </svg>
+        </div>
+        <div class="main-div-container col-lg-3 col-md-6 col-sm-12">
+          <div class="main-div">Превенция суицида несовершеннолетних</div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none">
+            <path opacity="0.6"
+              d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807611 1.97919 0.807611 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807611 21.0711 0.807611 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM11 13.5L12 13.5L12 10.5L11 10.5L11 13.5Z"
+              fill="black" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="main2-section global-padding">
+      <div class="container px-4">
+        <div class="row gx-4">
+          <div class="col-md-6">
+            <div class="texts ">
+              <div>
+                <b>
+                  <h1 id="first-text">Деятельность</h1>
+                </b>
+              </div>
+              <div class="text-y">
+                <ul>
+                  <li>Мы повышаем понимание роли психического здоровья в целом и факторов суицидального риска в ходе
+                    реализации
+                    <b><span style="color:#15854F;">превенции суицида среди несовершеннолетних</span></b>. Организуем
+                    целенаправленную работу по выявлению подростков группы риска и оказание им своевременной
+                    психологической
+                    и медицинской помощи. Осуществляем координацию между психологами и врачами психического здоровья.
+                  </li>
+                  <li>Оказываем конфиденциальную поддержку и консультацию подросткам, борющимся с мыслями о
+                    самоубийстве,
+                    а также всем, кто беспокоится о молодых людях в рамках <b><span style="color: #15854F;">Службы
+                        психологической
+                        поддержки BFLine</span></b>.
+                  </li>
+                  <li>Формируем и развиваем основные <b><span style="color: #15854F;">жизненные навыки у обучающейся
+                        молодежи</span></b>. Предоставляем научно обоснованные и эффективные способы по сохранению,
+                    укреплению
+                    и поддержанию психического здоровья детей и подростков.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 px-4">
+            <div class="images">
+              <div class="first-second-img">
+                <img src="pics/Аутопсия  1.png" alt="first-img" class="img-fluid">
+                <img src="pics/Метод рекомед девиантное  1.png" alt="second-img" class="img-fluid">
+              </div>
+              <div class="second-third-img text-center">
+                <img id="thrd-img" src="pics/IMG_0216 1.png" alt="third-img" class="img-fluid">
+                <img id="fourth-img" src="pics/Жизненные навыки  1.png" alt="fourth-img" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main3-section global-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="texts-3">
+              <b>
+                <h1 id="word-result">Результаты</h1>
+              </b>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="main-text">
+              <p>В рамках проекта <b><span style="color: #15854F;">Предотвращение самоубийств
+                    несовершеннолетних</span></b>
+                мы способствуем значительному снижению уровня тревоги и стресса у подростков, в целом снижается
+                стигматизация населения в отношении психического здоровья.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main4-section global-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="item-container">
+              <div class="ellipse-container">
+                <img src="./pics/Ellipse for number.png" alt="ellipse_number" class="ellipse-number" data-number="1">
+                <b>
+                  <p class="inner-number">1</p>
+                </b>
+                <div class="outer-img-container">
+                  <img src="pics/Ellipse outer.png" alt="main-img1" class="layer">
+                  <div class="inner-img-container">
+                    <img src="pics/Ellipse inner.png" alt="main-img1-down" class="layer">
+                  </div>
+                  <div class="inner2-img-container">
+                    <img src="/pics/target-audience 1.png" class="layer">
+                  </div>
+                </div>
+              </div>
+              <div class="text-for">
+                <h2 class="text-target-h2">Охват</h2>
+                <p class="p-target">Увеличивается охват подростков,
+                  получающих помощь медицинских
+                  специалистов при выявлении у них проблем с психическим
+                  здоровьем</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Item 2 -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="item-container">
+              <div class="ellipse-container">
+                <img src="./pics/Ellipse for number.png" alt="ellipse_number" class="ellipse-number" data-number="2">
+                <b>
+                  <p class="inner-number">2</p>
+                </b>
+                <div class="outer-img-container">
+                  <img src="pics/Ellipse outer.png" alt="main-img1" class="layer">
+                  <div class="inner-img-container">
+                    <img src="pics/Ellipse inner.png" alt="main-img1-down" class="layer">
+                  </div>
+                  <div class="inner2-img-container">
+                    <img src="/pics/risk 1.png" alt="" class="layer">
+                  </div>
+                </div>
+              </div>
+              <div class="text-for">
+                <h2 class="text-risk-h2">Степень выявления риска</h2>
+                <p class="p-risk">Повышается степень выявления у обучающихся суицидального
+                  риска, существенное улучшение в предотвращении случаев повтора
+                  суицидального поведения у обучающихся</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Item 3 -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="item-container">
+              <div class="ellipse-container">
+                <img src="./pics/Ellipse for number.png" alt="ellipse_number" class="ellipse-number" data-number="3">
+                <b>
+                  <p class="inner-number">3</p>
+                </b>
+                <div class="outer-img-container">
+                  <img src="pics/Ellipse outer.png" alt="main-img1" class="layer">
+                  <div class="inner-img-container">
+                    <img src="pics/Ellipse inner.png" alt="main-img1-down" class="layer">
+                  </div>
+                  <div class="inner2-img-container">
+                    <img src="/pics/Layer 65.png" alt="" class="layer">
+                  </div>
+                </div>
+              </div>
+              <div class="text-for">
+                <h2 class="text-layer-h2">Профессиональный уровень</h2>
+                <p class="p-layer">Растёт профессиональный уровень психологической службы</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Item 4 -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="item-container">
+              <div class="ellipse-container">
+                <img src="./pics/Ellipse for number.png" alt="ellipse_number" class="ellipse-number" data-number="4">
+                <b>
+                  <p class="inner-number">4</p>
+                </b>
+                <div class="outer-img-container">
+                  <img src="pics/Ellipse outer.png" alt="main-img1" class="layer">
+                  <div class="inner-img-container">
+                    <img src="pics/Ellipse inner.png" alt="main-img1-down" class="layer">
+                  </div>
+                  <div class="inner2-img-container">
+                    <img src="/pics/group (1) 1.png" alt="" class="layer">
+                  </div>
+                </div>
+              </div>
+              <div class="text-for">
+                <h2 class="text-group-h2">Доступность</h2>
+                <p class="p-group">Возрастает
+                  доступность услуг психолога школы, врача общей
+                  практики и врача психического здоровья для подростков</p>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
+    <section class="main5-section global-padding">
+      <div class="text-bfline row">
+        <p class="col">Благодаря реализации проекта <b><span style="color: #15854F;">BFLine</span></b> в целом
+          повышается
+          уровень подготовленности детей к взрослой
+          жизни, а также в случаях обращения их родителей отмечается улучшение родительской
+          компетентности.
+        </p>
+      </div>
+    </section>
+
+    <section class="main4-section global-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="item-container">
+              <div class="ellipse-container">
+                <img src="./pics/Ellipse for number.png" alt="ellipse_number" class="ellipse-number" data-number="1">
+                <b>
+                  <p class="inner-number">1</p>
+                </b>
+                <div class="outer-img-container">
+                  <img src="pics/Ellipse outer.png" alt="main-img1" class="layer">
+                  <div class="inner-img-container">
+                    <img src="pics/Ellipse inner.png" alt="main-img1-down" class="layer">
+                  </div>
+                  <div class="inner2-img-container">
+                    <img src="/pics/message.png" class="layer">
+                  </div>
+                </div>
+              </div>
+              <div class="text-for">
+                <h2 class="text-target-h2">Самообращения</h2>
+                <p class="p-target">Рост уровня самообращений подростков за помощью в случае появления проблем с психическим здоровьем и выявления проблем у сверстников</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Item 2 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="item-container">
+              <div class="ellipse-container">
+                <img src="./pics/Ellipse for number.png" alt="ellipse_number" class="ellipse-number" data-number="2">
+                <b>
+                  <p class="inner-number">2</p>
+                </b>
+                <div class="outer-img-container">
+                  <img src="pics/Ellipse outer.png" alt="main-img1" class="layer">
+                  <div class="inner-img-container">
+                    <img src="pics/Ellipse inner.png" alt="main-img1-down" class="layer">
+                  </div>
+                  <div class="inner2-img-container">
+                    <img src="/pics/heart.png" alt="" class="layer">
+                  </div>
+                </div>
+              </div>
+              <div class="text-for">
+                <h2 class="text-risk-h2">Жизнестойкость</h2>
+                <p class="p-risk">Значительное повышение показателей по преодолению проблем и трудностей молодыми людьми</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Item 3 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="item-container">
+              <div class="ellipse-container">
+                <img src="./pics/Ellipse for number.png" alt="ellipse_number" class="ellipse-number" data-number="3">
+                <b>
+                  <p class="inner-number">3</p>
+                </b>
+                <div class="outer-img-container">
+                  <img src="pics/Ellipse outer.png" alt="main-img1" class="layer">
+                  <div class="inner-img-container">
+                    <img src="pics/Ellipse inner.png" alt="main-img1-down" class="layer">
+                  </div>
+                  <div class="inner2-img-container">
+                    <img src="/pics/star.png" alt="" class="layer">
+                  </div>
+                </div>
+              </div>
+              <div class="text-for">
+                <h2 class="text-layer-h2">Удовлетворенность</h2>
+                <p class="p-layer">Высокий уровень удовлетворенности подростков при получении психологической поддержки и помощиz  </p>
+              </div>
+            </div>
+          </div>
+    
+          
+    
+        </div>
+      </div>
+    </section>
+
+    <section class="main8-section global-padding">
+      <div class="text-result">
+        <p> Результаты проекта <b><span style="color: #15854F;">Развитие жизненных навыков</span></b>
+          позволяют
+          в целом улучшить психическое здоровье
+          подростков. Кроме этого, в процессе подготовки тренеров по уникальной интерактивной методике
+          обучения повышается уровень профессиональных компетенций педагогов и психологов, а также
+          организуется эффективный воспитательный компонент обучения для обучающихся.</p>
+      </div>
+    </section>
+
+    <section class="main4-section global-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="item-container">
+              <div class="ellipse-container">
+                <img src="./pics/Ellipse for number.png" alt="ellipse_number" class="ellipse-number" data-number="1">
+                <b>
+                  <p class="inner-number">1</p>
+                </b>
+                <div class="outer-img-container">
+                  <img src="pics/Ellipse outer.png" alt="main-img1" class="layer">
+                  <div class="inner-img-container">
+                    <img src="pics/Ellipse inner.png" alt="main-img1-down" class="layer">
+                  </div>
+                  <div class="inner2-img-container">
+                    <img src="/pics/Group.png" class="layer">
+                  </div>
+                </div>
+              </div>
+              <div class="text-for">
+                <h2 class="text-target-h2">Успеваемость</h2>
+                <p class="p-target">Повышается уровень успеваемости</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Item 2 -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="item-container">
+              <div class="ellipse-container">
+                <img src="./pics/Ellipse for number.png" alt="ellipse_number" class="ellipse-number" data-number="2">
+                <b>
+                  <p class="inner-number">2</p>
+                </b>
+                <div class="outer-img-container">
+                  <img src="pics/Ellipse outer.png" alt="main-img1" class="layer">
+                  <div class="inner-img-container">
+                    <img src="pics/Ellipse inner.png" alt="main-img1-down" class="layer">
+                  </div>
+                  <div class="inner2-img-container">
+                    <img src="/pics/Group (1).png" alt="" class="layer">
+                  </div>
+                </div>
+              </div>
+              <div class="text-for">
+                <h2 class="text-risk-h2">Проблемы</h2>
+                <p class="p-risk">Уменьшается количество проблем поведенческого характера</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Item 3 -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="item-container">
+              <div class="ellipse-container">
+                <img src="./pics/Ellipse for number.png" alt="ellipse_number" class="ellipse-number" data-number="3">
+                <b>
+                  <p class="inner-number">3</p>
+                </b>
+                <div class="outer-img-container">
+                  <img src="pics/Ellipse outer.png" alt="main-img1" class="layer">
+                  <div class="inner-img-container">
+                    <img src="pics/Ellipse inner.png" alt="main-img1-down" class="layer">
+                  </div>
+                  <div class="inner2-img-container">
+                    <img src="/pics/Group (2).png" alt="" class="layer">
+                  </div>
+                </div>
+              </div>
+              <div class="text-for">
+                <h2 class="text-layer-h2">Заболевания</h2>
+                <p class="p-layer">Снижается заболеваемость соматического вида</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Item 4 -->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="item-container">
+              <div class="ellipse-container">
+                <img src="./pics/Ellipse for number.png" alt="ellipse_number" class="ellipse-number" data-number="4">
+                <b>
+                  <p class="inner-number">4</p>
+                </b>
+                <div class="outer-img-container">
+                  <img src="pics/Ellipse outer.png" alt="main-img1" class="layer">
+                  <div class="inner-img-container">
+                    <img src="pics/Ellipse inner.png" alt="main-img1-down" class="layer">
+                  </div>
+                  <div class="inner2-img-container">
+                    <img src="/pics/Group (3).png" alt="" class="layer">
+                  </div>
+                </div>
+              </div>
+              <div class="text-for">
+                <h2 class="text-group-h2">Жизненные навыки</h2>
+                <p class="p-group">Формируются активная жизненная позиция, уверенность в себе, навыки эффективной адаптации к жизненным ситуациям</p>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
+    <section class="main10-section global-padding">
+      <div class="word-for-resource">
+        <b>
+          <h2 id="main-resource">Ресурсы</h2>
+        </b>
+        <p id="text-for-res">Мы привлекаем научные сообщества и экспертов к проектам, создаём региональные
+          центры и проводим
+          обучающие программы для психологов, педагогов, врачей психического здоровья и журналистов. Это
+          включает в себя обучение школьного персонала, специалистов управлений образования, медицинских
+          работников и родителей навыкам предотвращения самоубийств. Также подготовленные нами
+          профессиональные тренера, способны формировать и развивать основные жизненные навыки подростков.
+        </p>
+
+      </div>
+    </section>
+
+    <section class="main11-section global-padding">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img class="img-med"
+            src="pics/Медицинская команда с ноутбуком стоковая фотография © Wavebreakmedia  Cкачать картинку 102603306 1.png"
+            alt="img-med">
+          <p class="section11-p">Экспертное сообщество</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <p class="section11-p">Команда специалистов</p>
+          <img class="img-people"
+            src="pics/Деловые люди, показывающие жест вверх большим пальцем стоковая фотография © leungchopan  Cкачать картинку 94433498 1.png"
+            alt="img-people">
+  
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img class="img-smile"
+            src="pics/Улыбающийся Азиатский Психоаналитик Делает Заметки Блокноте Время Мультиэтнические Мужчины Сидят стоковая фотография © IgorVetu 1.png"
+            alt="img-smile">
+          <p class="section11-p">Тренерская лига</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="main12-section global-padding">
+      <div class="last-text">
+        <b>
+          <h1 id="title-text">Влияние</h1>
+        </b>
+      </div>
+      <div class="texts-main">
+        <div class="texts-4">
+          <div>
+            <p>
+              Мы стремимся формировать национальную социальную политику и вносить значительный вклад в
+              реализацию
+              государственных стратегий по развитию психического здоровья молодого поколения на
+              региональном уровнях
+              везде, где это возможно. Наш фонд исходит из целеустремлённости и желания действовать
+              как
+              отдельных
+              лиц, родителей, так и больших сообществ.
+            </p>
+          </div>
+
+          <div>
+            <p>
+              Мы настаиваем на переменах во многих регионах, используя результативные и динамичные
+              проекты, а также
+              представляя доказательства тем, кто находится у власти, чтобы наш опыт был
+              распространён, а
+              полученные
+              знания были использованы в улучшении системы психического здоровья.
+            </p>
+          </div>
+
+          <div>
+            <p>
+              Для получения полной информации о наших проектах, включая результаты научных
+              исследований,
+              аналитических обзоров и сообщений в СМИ, посетите страницы нашего сайта и партнёров.
+            </p>
+          </div>
+
+          <div>
+            <p>
+              Мы активно сотрудничаем с международными организациями: с Представительством Детского
+              фонда
+              ООН в
+              Казахстане (ЮНИСЕФ), Американской психологической ассоциацией (APA), Исследовательским
+              центром
+              Boing-boing при Университете Брайтон Королевства Великобритании, PAPYRUS Prevention of
+              Young
+              Suicide
+              Великобритания.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class=" main13-section global padding">
+      <div class="images-3 row text-center">
+        <div class="col-lg-4 col-md-6 col-sm-12"><img src="pics/Глобальный императив 1.png" alt="img-global"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12"><img src="pics/ЮНИСЕФ 1.png" alt="img-unf"></div>
+        <div class="col-lg-4 col-md-6 col-sm-12"><img src="pics/IMG_0235 1.png" alt="img-35"></div>
+
+
+      </div>
+      <div class="main13-text global-padding">
+        <p id="under-img">Тесно взаимодействуем с национальными организациями: с Акционерным обществом
+          «Самрук-Қазына», с
+          Республиканским научно-практическим центром психического здоровья Министерства здравоохранения
+          РК, с
+          Национальной академией образования им. И.Алтынсарина Министерства образования и науки РК, с
+          Некоммерческим акционерным обществом «Центр поддержки гражданских инициатив» Министерства
+          информации
+          и общественного развития РК.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-container global-padding row">
+      <div class="col-lg-4 col-md-12">
+        <img id="footer-logo" src="./pics/footer-logo.png" alt="footer main logo" class="img-fluid" />
+        <div class="footer-icons">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="42" viewBox="0 0 60 42" fill="none">
+            <path
+              d="M58.7478 6.56083C58.4062 5.29038 57.7365 4.13181 56.8058 3.20107C55.875 2.27032 54.7158 1.60005 53.4442 1.25733C48.7634 2.55123e-07 30 0 30 0C30 0 11.2366 -2.55123e-07 6.5558 1.25064C5.28362 1.59225 4.12383 2.26215 3.1929 3.19307C2.26197 4.12399 1.59267 5.28315 1.25223 6.55414C-2.55448e-07 11.2357 0 21 0 21C0 21 -2.55448e-07 30.7643 1.25223 35.4392C1.94196 38.0207 3.97768 40.0538 6.5558 40.7427C11.2366 42 30 42 30 42C30 42 48.7634 42 53.4442 40.7427C56.029 40.0538 58.058 38.0207 58.7478 35.4392C60 30.7643 60 21 60 21C60 21 60 11.2357 58.7478 6.56083ZM24.0402 29.9618V12.0382L39.5759 20.9331L24.0402 29.9618Z"
+              fill="white" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12.3423 0.126C14.5816 0.0229091 15.2956 0 21 0C26.7044 0 27.4184 0.0248182 29.6558 0.126C31.8933 0.227182 33.4205 0.584182 34.7569 1.10155C36.1563 1.63036 37.4258 2.457 38.4758 3.52609C39.5449 4.57418 40.3696 5.84182 40.8965 7.24309C41.4158 8.57945 41.7709 10.1067 41.874 12.3404C41.9771 14.5835 42 15.2975 42 21C42 26.7044 41.9752 27.4184 41.874 29.6577C41.7728 31.8914 41.4158 33.4186 40.8965 34.755C40.3696 36.1565 39.5435 37.4262 38.4758 38.4758C37.4258 39.5449 36.1563 40.3696 34.7569 40.8965C33.4205 41.4158 31.8933 41.7709 29.6596 41.874C27.4184 41.9771 26.7044 42 21 42C15.2956 42 14.5816 41.9752 12.3423 41.874C10.1086 41.7728 8.58136 41.4158 7.245 40.8965C5.84358 40.3696 4.57384 39.5435 3.52418 38.4758C2.45582 37.4271 1.62906 36.158 1.10155 34.7569C0.584182 33.4205 0.229091 31.8933 0.126 29.6596C0.0229091 27.4165 0 26.7025 0 21C0 15.2956 0.0248182 14.5816 0.126 12.3442C0.227182 10.1067 0.584182 8.57945 1.10155 7.24309C1.62983 5.84197 2.45723 4.57287 3.52609 3.52418C4.57426 2.45605 5.84272 1.6293 7.24309 1.10155C8.57945 0.584182 10.1067 0.229091 12.3404 0.126H12.3423ZM29.4859 3.906C27.2714 3.80482 26.607 3.78382 21 3.78382C15.393 3.78382 14.7286 3.80482 12.5141 3.906C10.4656 3.99955 9.35455 4.34127 8.61382 4.62955C7.63445 5.01136 6.93382 5.46382 6.19882 6.19882C5.50209 6.87664 4.96589 7.70181 4.62955 8.61382C4.34127 9.35455 3.99955 10.4656 3.906 12.5141C3.80482 14.7286 3.78382 15.393 3.78382 21C3.78382 26.607 3.80482 27.2714 3.906 29.4859C3.99955 31.5344 4.34127 32.6455 4.62955 33.3862C4.96555 34.2968 5.502 35.1235 6.19882 35.8012C6.87655 36.498 7.70318 37.0345 8.61382 37.3705C9.35455 37.6587 10.4656 38.0005 12.5141 38.094C14.7286 38.1952 15.3911 38.2162 21 38.2162C26.6089 38.2162 27.2714 38.1952 29.4859 38.094C31.5344 38.0005 32.6455 37.6587 33.3862 37.3705C34.3655 36.9886 35.0662 36.5362 35.8012 35.8012C36.498 35.1235 37.0345 34.2968 37.3705 33.3862C37.6587 32.6455 38.0005 31.5344 38.094 29.4859C38.1952 27.2714 38.2162 26.607 38.2162 21C38.2162 15.393 38.1952 14.7286 38.094 12.5141C38.0005 10.4656 37.6587 9.35455 37.3705 8.61382C36.9886 7.63445 36.5362 6.93382 35.8012 6.19882C35.1233 5.50214 34.2982 4.96595 33.3862 4.62955C32.6455 4.34127 31.5344 3.99955 29.4859 3.906ZM18.3177 27.4737C19.8157 28.0973 21.4837 28.1815 23.0369 27.7118C24.59 27.2422 25.9319 26.2479 26.8334 24.8988C27.7349 23.5497 28.1401 21.9295 27.9797 20.3148C27.8193 18.7002 27.1034 17.1913 25.9541 16.0459C25.2215 15.3137 24.3356 14.7531 23.3603 14.4044C22.385 14.0556 21.3445 13.9275 20.3137 14.0292C19.2829 14.1308 18.2875 14.4598 17.3991 14.9923C16.5107 15.5249 15.7514 16.2478 15.1759 17.109C14.6005 17.9702 14.2231 18.9483 14.071 19.9728C13.9189 20.9974 13.9958 22.0429 14.2963 23.0342C14.5968 24.0254 15.1133 24.9377 15.8086 25.7054C16.504 26.473 17.3609 27.077 18.3177 27.4737ZM13.3675 13.3675C14.3698 12.3651 15.5597 11.5701 16.8693 11.0276C18.1789 10.4851 19.5825 10.2059 21 10.2059C22.4175 10.2059 23.8211 10.4851 25.1307 11.0276C26.4403 11.5701 27.6302 12.3651 28.6325 13.3675C29.6349 14.3698 30.4299 15.5597 30.9724 16.8693C31.5149 18.1789 31.794 19.5825 31.794 21C31.794 22.4175 31.5149 23.8211 30.9724 25.1307C30.4299 26.4403 29.6349 27.6302 28.6325 28.6325C26.6083 30.6568 23.8628 31.794 21 31.794C18.1372 31.794 15.3917 30.6568 13.3675 28.6325C11.3432 26.6083 10.206 23.8628 10.206 21C10.206 18.1372 11.3432 15.3917 13.3675 13.3675ZM34.188 11.8135C34.4364 11.5792 34.6352 11.2974 34.7728 10.9849C34.9103 10.6723 34.9837 10.3354 34.9887 9.99396C34.9937 9.65254 34.9301 9.31359 34.8017 8.99718C34.6734 8.68077 34.4828 8.39334 34.2414 8.15189C33.9999 7.91045 33.7125 7.7199 33.3961 7.59153C33.0797 7.46317 32.7407 7.39959 32.3993 7.40457C32.0579 7.40954 31.7209 7.48298 31.4084 7.62051C31.0959 7.75805 30.8141 7.95689 30.5798 8.20527C30.1241 8.68833 29.8747 9.32996 29.8843 9.99396C29.894 10.658 30.1621 11.292 30.6317 11.7616C31.1012 12.2312 31.7353 12.4993 32.3993 12.5089C33.0633 12.5186 33.7049 12.2691 34.188 11.8135Z"
+              fill="white" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.164062 21.5379C0.164062 32.1863 7.89784 41.041 18.0126 42.8365V27.3672H12.6581V21.4183H18.0126V16.6581C18.0126 11.3035 21.4627 8.32992 26.3425 8.32992C27.8882 8.32992 29.5553 8.56731 31.101 8.80469V14.2788H28.3648C25.7464 14.2788 25.152 15.5871 25.152 17.2542V21.4183H30.8636L29.9123 27.3672H25.152V42.8365C35.2668 41.041 43.0006 32.1881 43.0006 21.5379C43.0006 9.69177 33.3624 0 21.5823 0C9.80229 0 0.164062 9.69177 0.164062 21.5379Z"
+              fill="white" />
+          </svg>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <p id="quick-link">БЫСТРЫЕ ССЫЛКИ</p>
+        <div class="footer-links">
+          <a href="#">Главная</a>
+          <a href="#">О нас</a>
+          <a href="#">Руководителям и специалистам</a>
+          <a href="#">Родителям</a>
+          <a href="#">Превенция суицида</a>
+          <a href="#">Служба психологической поддержки</a>
+          <a href="#">Мониторинговая система</a>
+          <a href="#">Развитие жизненных навыков</a>
+          <a href="#">Контакты</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div>
+          <p class="contact-info">Контакты</p>
+          <div class="yellow-contact-info">
+            <p>+7 717 276 86 48</p>
+            <p>hello@madeontilda.com</p>
+          </div>
+        </div>
+        <div style="margin-top: 31px">
+          <p class="contact-info">АДРЕС</p>
+          <div class="yellow-contact-info">
+            <p>
+              <span style="display: block">г . Нур-Султан, проспект</span>
+              Мангилик ел 55/13, блок С 2.1, 3 этаж
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
